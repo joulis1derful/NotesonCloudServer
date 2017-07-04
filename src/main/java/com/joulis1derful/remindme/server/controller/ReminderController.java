@@ -31,7 +31,7 @@ public class ReminderController {
         return service.save(remind);
     }
 
-    @RequestMapping(value = "/reminders/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/reminders/del/{id}")
     @ResponseBody
     public void delete(@PathVariable long id) {
         service.remove(id);
